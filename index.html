@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<title>Looker Embed</title>
-<style>
-  html, body { margin: 0; height: 100%; }
-  iframe { width: 100%; height: 100%; border: 0; }
-</style>
+    <meta charset="UTF-8">
+    <title>Looker Studio Embed</title>
+    <style>
+        /* Verwijder marges zodat de iframe de hoeken raakt */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden; /* Geen scrollbalken als je scherm precies 1080p is */
+        }
+
+        iframe {
+            display: block;
+            width: 1920px;
+            height: 1080px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-<iframe src="JE_LOOKER_EMBED_URL" allowfullscreen></iframe>
+
+    <iframe width="1920" height="1080" src="https://lookerstudio.google.com/embed/reporting/5e22df3b-79c1-4b0b-b2a7-23fdab1e62a5/page/HmTmF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+
 </body>
 </html>
